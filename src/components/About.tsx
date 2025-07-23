@@ -30,14 +30,11 @@ const About: React.FC = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-cyan-400 via-blue-500 to-purple-600 rounded-2xl transform -rotate-6 group-hover:-rotate-12 transition-all duration-500 opacity-50"></div>
               
               <div className="relative w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 rounded-2xl overflow-hidden shadow-2xl border-4 border-white dark:border-gray-800">
-                <div className="w-full h-full bg-gradient-to-br from-blue-100 to-purple-100 dark:from-gray-700 dark:to-gray-600 flex items-center justify-center">
-                  <div className="text-gray-500 dark:text-gray-400 text-center">
-                    <div className="w-24 h-24 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full mx-auto mb-4 flex items-center justify-center">
-                      <Code2 className="w-12 h-12 text-white" />
-                    </div>
-                    <p className="text-sm">Profile Photo</p>
-                  </div>
-                </div>
+                <img 
+                  src="/public/WhatsApp Image 2025-07-23 at 3.36.33 PM.jpeg" 
+                  alt="Maram Mahidhar - Profile Photo"
+                  className="w-full h-full object-cover object-center"
+                />
               </div>
             </div>
           </div>
