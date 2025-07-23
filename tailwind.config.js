@@ -11,6 +11,9 @@ export default {
         'blob': 'blob 7s infinite',
         'fade-in': 'fadeIn 0.8s ease-out forwards',
         'blink': 'blink 1s infinite',
+        'float': 'float 6s ease-in-out infinite',
+        'glow': 'glow 2s ease-in-out infinite alternate',
+        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       },
       keyframes: {
         blob: {
@@ -45,6 +48,22 @@ export default {
             opacity: '0',
           },
         },
+        float: {
+          '0%, 100%': {
+            transform: 'translateY(0px)',
+          },
+          '50%': {
+            transform: 'translateY(-20px)',
+          },
+        },
+        glow: {
+          'from': {
+            'box-shadow': '0 0 20px rgba(59, 130, 246, 0.5)',
+          },
+          'to': {
+            'box-shadow': '0 0 30px rgba(59, 130, 246, 0.8)',
+          },
+        },
       },
       colors: {
         primary: {
@@ -59,9 +78,30 @@ export default {
           800: '#1e40af',
           900: '#1e3a8a',
         },
+        accent: {
+          50: '#fdf4ff',
+          100: '#fae8ff',
+          200: '#f5d0fe',
+          300: '#f0abfc',
+          400: '#e879f9',
+          500: '#d946ef',
+          600: '#c026d3',
+          700: '#a21caf',
+          800: '#86198f',
+          900: '#701a75',
+        },
       },
       backdropBlur: {
         xs: '2px',
+      },
+      boxShadow: {
+        'glow': '0 0 20px rgba(59, 130, 246, 0.3)',
+        'glow-lg': '0 0 30px rgba(59, 130, 246, 0.6)',
+        '3xl': '0 35px 60px -12px rgba(0, 0, 0, 0.25)',
+      },
+      spacing: {
+        '18': '4.5rem',
+        '88': '22rem',
       },
     },
   },
